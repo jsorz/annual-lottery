@@ -117,7 +117,7 @@ new Vue({
     next: function() {
       // 防双击 防误触
       this._lastActionTime = this._lastActionTime || 0;
-      if (new Date().getTime() - this._lastActionTime < 1000) {
+      if (new Date().getTime() - this._lastActionTime < 500) {
         // 1秒内不得连续操作
         return;
       }
